@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nomen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-13 03:24:38 AM"/>
+        <attribute name="created" value="bm9tZW47REVTS1RPUC1DTEdONDhOOzIwMTktMTEtMTM7MDM6MTE6MjIgQU07Mjg1OA=="/>
+        <attribute name="edited" value="bm9tZW47REVTS1RPUC1DTEdONDhOOzIwMTktMTEtMTM7MDM6MjQ6MzggQU07NTsyOTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, x1, x2" type="Integer" array="False" size=""/>
+            <output expression="&quot;a katsay&#305;s&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b katsay&#305;s&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c katsay&#305;s&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="d" expression="b^2-4*a*c"/>
+            <if expression="d&gt;0">
+                <then>
+                    <assign variable="x1" expression="-b+d^(1/2)/2*a"/>
+                    <assign variable="x2" expression="-b-d^(1/2)/2*a"/>
+                    <output expression="&quot;K&#246;kler &quot;&amp;x1&amp;&quot; ve &quot;&amp;x2&amp;&quot; dir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="d==0">
+                        <then>
+                            <assign variable="x1" expression="-b/2*a"/>
+                            <assign variable="x2" expression="-b/2*a"/>
+                            <output expression="&quot;K&#246;kler &quot;&amp;x1&amp;&quot; dir ve &#231;ak&#305;&#351;&#305;kt&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Denklemin ger&#231;el k&#246;k&#252; yoktur&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
